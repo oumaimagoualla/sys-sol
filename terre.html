@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f30c.png">
+	<title>Terre</title>
+	<link rel="stylesheet" href="infocard.css">
+	<script src="scrpt.js"></script>
+	<style>
+		span.title {
+			background: linear-gradient(90deg, rgb(2, 148, 2) 0%, rgb(0, 139, 163) 100%);
+		}
+		h1.cardtitle {
+			color:rgb(2, 148, 2); border-color: rgb(2, 148, 2);
+		}
+	</style>
+</head>
+<body>
+	<ul class="nvbr">
+		<li class="nvbr" ><a href="home.html">Accueil</a></li>
+		<li class="nvbr" id="active"><a href="home.html#maj">Planètes majeures</a></li>
+		<li class="nvbr"><a href="home.html#dwarf">Planètes naines</a></li>
+		<li class="nvbr"><a href="sources.html">Sources</a></li>
+	</ul>
+	<h1 class="cardtitle">🜨 TERRE</h1>
+	<div class="infocard">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg" class="photo">
+		<p><i>Notre planète, pleine de vie. 3<sup>ème</sup> plus proche du soleil.</i></p>
+		<p><span class="title">TYPE:</span> Planète (tellurique)</p>
+		<p><span class="title">MASSE:</span> ~ 5,972168.10<sup>24</sup> kg</p>
+		<p><span class="title">DIAMETRE:</span> ~ 12756 km</p>
+		<p><span class="title">GRAVITE A LA SURFACE:</span> ~ 9,8 m/s<sup>2</sup> </p>
+		<p><span class="title">DISTANCE AU SOLEIL:</span> ~ 1,496.10<sup>8</sup> km (8 minutes-lumière)</p>
+		<p><span class="title">TEMPERATURE:</span><br>
+			&nbsp;&nbsp;- Surface (moyenne): ~ 15°C <br>
+			&nbsp;&nbsp;- Noyeau interne : ~ 5700 K (5,430 °C) <br>
+		</p>
+		<p><span class="title">PERIODES:</span> <br>
+			&nbsp;&nbsp;- Orbite autour du soleil: ~ 365,25 jours<br>
+			&nbsp;&nbsp;- Rotation autour de son axe: ~ 23 h 56 min 4,084 s
+		</p>
+		<p><span class="title">SATELLITES:</span> <a href="lune.html" onmouseover="show('sat')" onmouseleave="hide('sat')">Lune</a>, ainsi que plusieurs satellites artificiels</p>
+		<div class="satcontainer"><img class="satellite" id="sat" src="FullMoon2010.jpg"></div>
+	</div>
+</body>
+</html>

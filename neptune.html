@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f30c.png">
+        <title>Neptune</title>
+        <link rel="stylesheet" href="infocard.css">
+	<script src="scrpt.js"></script>
+	<style>
+		span.title {
+			background: linear-gradient(90deg, rgb(53, 93, 180) 0%, rgb(29, 50, 82) 100%);
+		}
+		h1.cardtitle {
+			color: #355db4; border-color: #355db4;
+		}
+	</style>
+</head>
+<body>
+        <ul class="nvbr">
+		<li class="nvbr" ><a href="home.html">Accueil</a></li>
+		<li class="nvbr" id="active"><a href="home.html#maj">Planètes majeures</a></li>
+		<li class="nvbr"><a href="home.html#dwarf">Planètes naines</a></li>
+		<li class="nvbr"><a href="sources.html">Sources</a></li>
+	</ul>
+	<h1 class="cardtitle">♆ NEPTUNE</h1>
+	<div class="infocard">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Neptune_Voyager2_color_calibrated.png" class="photo">
+		<p><i>La plus lointaine des planètes majeures. C'est le 1<sup>er</sup> objet céleste à avoir été découvert par prédictions mathématiques et non par observation.</i></p>
+		<p><span class="title">TYPE:</span> Planète (géante glacée)</p>
+		<p><span class="title">MASSE:</span> ~ 1,0243.10<sup>26</sup> kg</p>
+		<p><span class="title">DIAMETRE:</span> ~ 49528 km</p>
+		<p><span class="title">GRAVITE A LA SURFACE:</span> ~ 11,15 m/s<sup>2</sup> (1,14x celle de la Terre)</p>
+		<p><span class="title">DISTANCE AU SOLEIL:</span> ~ 4,5 milliard km</p>
+		<p><span class="title">TEMPERATURE MOYENNE:</span> ~ -200°C</p>
+		<p><span class="title">PERIODES:</span> <br>
+			&nbsp;&nbsp;- Orbite autour du soleil: ~ 60,190 jours terrestres<br>
+			&nbsp;&nbsp;- Rotation autour de son axe: ~ 16h
+		</p>
+		<p><span class="title">SATELLITES:</span>14, y compris:<br></p>
+			&nbsp;<span class="satname" onmouseover="show('sat1')" onmouseleave="hide('sat1')">Triton</span>, 
+			<span class="satname" onmouseover="show('sat2')" onmouseleave="hide('sat2')">Nereid</span>, 
+			<span class="satname" onmouseover="show('sat3')" onmouseleave="hide('sat3')">Proteus</span>
+		<div class="satcontainer" style="padding:0px !important;">
+			<img class="satellite" id="sat1" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Triton2_altcrop.jpg">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Nereid-Voyager2.jpg" class="satellite" id="sat2">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Proteus_%28Voyager_2%29.jpg" class="satellite" id="sat3">
+		</div>
+	</div>
+</body>
+</html>

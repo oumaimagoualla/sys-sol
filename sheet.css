@@ -1,0 +1,69 @@
+@import url('https://fonts.cdnfonts.com/css/ocr-a-std');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono');
+*::selection {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+body {
+	font-family:"OCR A Std", "Red Hat Mono", 'Courier New', Courier, monospace;
+	background-image: url(paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+	background-attachment: fixed;
+	color: azure;
+}
+h1 {
+	text-align: center;
+	color: #d2ceec;
+}
+h2 {
+	background: linear-gradient(90deg, rgba(68,51,78,1) 0%, rgba(147,144,182,1) 35%);
+	color: azure;
+	clear: both;
+	padding: 20px;
+}
+div.welcome {
+	float: right;
+	background-color: #aba7cf;
+	color: #303030;
+	padding: 30px;
+	margin: 50px;
+	box-shadow: 12px 12px rgba(173, 169, 209, 0.5);
+}
+div.dwrf {
+	display: inline-block;
+}
+img.sysmap {
+	box-shadow: 12px 12px rgba(126, 125, 136, 0.5);
+	margin: 50px 70px;
+	border: solid;
+	    
+}
+div.dw {
+	margin: 20px 50px;
+	padding: 0px 20px;
+	display: inline-block;
+	background: linear-gradient(140deg, rgba(22,20,20,1) 0%, rgba(22,20,20,0.5) 100%);
+}
+div.dw a:link {
+        color: #9390b6;
+}
+div.dw a:hover {
+        color: azure;
+}
+div.dwimgcontain {
+	float: right;
+	margin: 10px 50px;
+}
+img.hid {
+	visibility: hidden;
+	width: 200px;
+	height: 200px;
+	border: solid;
+	box-shadow: 12px 12px rgba(126, 125, 136, 0.5);
+}
+p.end a {
+	background: linear-gradient(90deg, rgba(62,51,78,1) 0%, rgba(106,90,205,1) 35%);
+	color: azure;
+	padding: 10px;
+}
+p.end a:hover {
+	color: #1c1a1f;
+}

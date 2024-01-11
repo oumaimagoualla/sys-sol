@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f30c.png">
+        <title>Uranus</title>
+        <link rel="stylesheet" href="infocard.css">
+	<script src="scrpt.js"></script>
+	<style>
+		span.title {
+			background: linear-gradient(90deg, rgb(107, 134, 192) 0%, rgb(112, 204, 207) 100%);
+		}
+		h1.cardtitle {
+			color: #70cccf; border-color: #70cccf;
+		}
+	</style>
+</head>
+<body>
+        <ul class="nvbr">
+		<li class="nvbr" ><a href="home.html">Accueil</a></li>
+		<li class="nvbr" id="active"><a href="home.html#maj">Planètes majeures</a></li>
+		<li class="nvbr"><a href="home.html#dwarf">Planètes naines</a></li>
+		<li class="nvbr"><a href="sources.html">Sources</a></li>
+	</ul>
+	<h1 class="cardtitle">⛢ URANUS</h1>
+	<div class="infocard">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Uranus_Voyager2_color_calibrated.png" class="photo">
+		<p><i>Planète de glace, 7<sup>ème</sup> plus proche du soleil. C'est la 4<sup>ème</sup> planète la plus massive du Système et de la 3<sup>ème</sup> plus grande.</i></p>
+		<p><span class="title">TYPE:</span> Planète (géante glacée)</p>
+		<p><span class="title">MASSE:</span> ~ 8,681.10<sup>25</sup> kg</p>
+		<p><span class="title">DIAMETRE:</span> ~ 51118 km</p>
+		<p><span class="title">GRAVITE A LA SURFACE:</span> ~ 8,87 m/s<sup>2</sup> (0,904x celle de la Terre)</p>
+		<p><span class="title">DISTANCE AU SOLEIL:</span> ~ 2,9 milliard km</p>
+		<p><span class="title">TEMPERATURE MOYENNE:</span> ~ -195°C</p>
+		<p><span class="title">PERIODES:</span> <br>
+			&nbsp;&nbsp;- Orbite autour du soleil: ~ 30687 jours terrestres<br>
+			&nbsp;&nbsp;- Rotation autour de son axe: ~ 17h 14min
+		</p>
+		<p><span class="title">SATELLITES:</span> 27, y compris:</p>
+		&nbsp;<span class="satname" onmouseover="show('sat1')" onmouseleave="hide('sat1')">Oberon</span>, 
+		<span class="satname" onmouseover="show('sat2')" onmouseleave="hide('sat2')">Miranda</span>, 
+		<span class="satname" onmouseover="show('sat3')" onmouseleave="hide('sat3')">Umbriel</span>, 
+		<span class="satname" onmouseover="show('sat4')" onmouseleave="hide('sat4')">Ariel</span>, 
+		<span class="satname" onmouseover="show('sat5')" onmouseleave="hide('sat5')">Titania</span> 
+		</p>
+		<div class="satcontainer" style="padding:0px !important;">
+			<img class="satellite" id="sat1" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Oberon_in_true_color_by_Kevin_M._Gill.jpg">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Miranda_-_January_24_1986_%2830906319004%29.jpg" class="satellite" id="sat2">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/PIA00040_Umbrielx2.47.jpg" class="satellite" id="sat3">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Ariel_in_monochrome.jpg" class="satellite" id="sat4">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Titania_%28moon%29_color%2C_cropped.jpg" class="satellite" id="sat5">
+		</div>
+	</div>
+</body>
+</html>

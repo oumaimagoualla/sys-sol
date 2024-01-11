@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="sheet.css">
+	<link rel="stylesheet" href="infocard.css">
+	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f30c.png">
+	<script src="scrpt.js"></script>
+	<title>SYSSOL: Accueil</title>
+</head>
+<body>
+	<h1>*---- Venez explorer le SYSTEME SOLAIRE! ----*</h1>
+	<br>
+	<h2 id="def">C'EST QUOI LE SYSTEME SOLAIRE?</h2>
+	<p>
+		C'est le système planétaire auquel appartient la Terre: un ensemble de planètes, satellites et astéroïdes qui tournent autour du Soleil, cette dernière étant l'étoile au centre du système. <br>
+		Il fait partie de la Voie Lactée, une galaxie contenant des millards d'autres étoiles et planètes. Les systèmes planétaires de la Voie Lactée eux-mêmes orbitent autour de son centre.
+	</p>
+	<h2 id="maj">PLANETES MAJEURES DU SYSTEME SOLAIRE</h2>
+	<img class="sysmap" src="https://media.istockphoto.com/id/1083270968/vector/the-model-of-the-solar-system.jpg?s=612x612&w=0&k=20&c=JQOIkUO6V95lBcWMm7tWghtvHeD0NETPji50LUfqBl8=" usemap="#solarsystem">
+	<map name="solarsystem">
+		<area shape="circle" coords="306,308,40" href="soleil.html" title="Soleil" onmouseover="c='Soleil'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="283,188,13" href="terre.html" title="Terre" onmouseover="c='Terre'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="300,174,3" href="lune.html" title="Lune" onmouseover="c='Lune'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="395,332,10" href="venus.html" title="Venus" onmouseover="c='Venus'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="245,272,7" href="mercure.html" title="Mercure" onmouseover="c='Mercure'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="267,447,15" href="mars.html" title="Mars" onmouseover="c='Mars'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="450,398,21" href="jupiter.html" title="Jupiter" onmouseover="c='Jupiter'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="385,123,17" href="saturne.html" title="Saturne" onmouseover="c='Saturne'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="98,401,16" href="uranus.html" title="Uranus" onmouseover="c='Uranus'; choice('choix');" onmouseleave="txtreset('choix')">
+		<area shape="circle" coords="146,109,19" href="neptune.html" title="Neptune" onmouseover="c='Neptune'; choice('choix');" onmouseleave="txtreset('choix')">
+	</map>
+	<div class="welcome" >
+		<p id="choix">Choisissez une planète...</p>
+		<script>
+			defaultmsg="Choisissez une planète...";
+			function choice(id) {
+				document.getElementById(id).innerHTML="Vous avez choisi: "+c+".<br> Allons-y!"
+			}
+			function txtreset(id) {
+				document.getElementById(id).innerHTML=defaultmsg; 
+			}
+		</script>
+	</div>
+	<h2 id="dwarf">PLANETES NAINES</h2>
+	<div class="dw" onmouseleave="hide('im')">
+		<p><i>Pas des satellites, mais pas assez grandes pour être considérées des planètes.</i></p>
+		<p>* <a href="pluto.html" onmouseover="dwreplace(0,'im')" >Pluton</a></p>
+		<p>* <a href="ceres.html" onmouseover="dwreplace(1,'im')">Cérès</a></p>
+		<p>* <a href="eris.html" onmouseover="dwreplace(2,'im')">Eris</a></p>
+		<p>* <a href="haumea.html" onmouseover="dwreplace(3,'im')">Hauméa</a></p>
+		<p>* <a href="makemake.html" onmouseover="dwreplace(4,'im')">Makémaké</a></p>
+		<div class="dwimgcontain" style="float: right;"><img id="im" src="" class="hid"></div>
+	</div>
+	<div><hr>
+	<p class="end" style="text-align: center;"><a href="sources.html">A PROPOS DU SITE/SOURCES</a></p>
+	</div>
+</body>
+</html>

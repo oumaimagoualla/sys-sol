@@ -1,0 +1,82 @@
+@import url('https://fonts.cdnfonts.com/css/ocr-a-std');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono');
+
+*::selection {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+body {
+        background-image: url(paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+	background-attachment: fixed;
+        font-family: "OCR A Std", "Red Hat Mono", 'Courier New', Courier, monospace;;
+        background-color: #303030;
+        color: azure;
+}
+ul.nvbr {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3f4668;
+}
+li.nvbr {
+        float: left;
+}
+li.nvbr a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+li.nvbr a:hover {
+        background-color: #1e2238;
+}
+li.nvbr#active {
+        background: linear-gradient(100deg, rgba(68,51,78,1) 0%, rgba(147,144,182,1) 35%);
+}
+div.infocard {
+        background: linear-gradient(140deg, rgb(31, 29, 34) 0%, rgba(31,29,34,0.5) 100%);
+        padding: 30px;
+        margin: 30px 50px;
+}
+h1.cardtitle {
+        padding-top: 5px;
+        border-top:10px solid;
+        text-align: center;
+        font-weight: bold;
+        background-color: azure;
+}
+span.title {    
+        font-weight: bold;
+        color: azure;
+}
+img.photo {
+        float: right;
+        border: solid;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        box-shadow: 12px 12px rgba(82, 83, 85, 0.5);
+}
+span.satname {
+        text-decoration: underline dotted azure;
+} 
+div.satcontainer {
+        padding: 0px 100px;
+	position: sticky;
+
+}
+img.satellite {
+        display: inline;
+        visibility: hidden;
+        width: 140px;
+        height: 140px;
+        border: solid;
+        margin: 0px;
+}
+div.infocard a {
+        color: #9390b6;
+}
+div.infocard a:hover {
+        color: azure;
+}

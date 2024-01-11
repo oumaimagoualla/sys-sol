@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f30c.png">
+	<title>Saturne</title>
+	<link rel="stylesheet" href="infocard.css">
+	<script src="scrpt.js"></script>
+	<style>
+		span.title {
+			background: linear-gradient(90deg, rgb(192, 107, 171) 0%, rgb(207, 158, 112) 100%);
+		}
+		h1.cardtitle {
+			color: #b26bc0; border-color: #b26bc0;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nvbr">
+		<li class="nvbr" ><a href="home.html">Accueil</a></li>
+		<li class="nvbr" id="active"><a href="home.html#maj">Planètes majeures</a></li>
+		<li class="nvbr"><a href="home.html#dwarf">Planètes naines</a></li>
+		<li class="nvbr"><a href="sources.html">Sources</a></li>
+	</ul>
+	<h1 class="cardtitle">♄ SATURNE</h1>
+	<div class="infocard">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" class="photo" style="height: 40% !important; width: 40% !important;">
+		<p><i>La planète aux anneaux (mais pas la seule - Jupiter, Uranus et Neptune en ont aussi, mais plus petits). 6<sup>ème</sup> plus proche du soleil et 2<sup>ème </sup>plus grande.</i></p>
+		<p><span class="title">TYPE:</span> Planète (géante gazeuze)</p>
+		<p><span class="title">MASSE:</span> ~ 5,6834.10<sup>26</sup> kg</p>
+		<p><span class="title">DIAMETRE:</span> ~ 120536 km</p>
+		<p><span class="title">GRAVITE A LA SURFACE:</span> ~ 10,44 m/s<sup>2</sup> (1.065x celle de la Terre)</p>
+		<p><span class="title">DISTANCE AU SOLEIL:</span> ~ 1.4 milliard km</p>
+		<p><span class="title">TEMPERATURE MOYENNE:</span> ~ -140°C</p>
+		<p><span class="title">PERIODES:</span> <br>
+			&nbsp;&nbsp;- Orbite autour du soleil: ~ 10,756 jours terrestres<br>
+			&nbsp;&nbsp;- Rotation autour de son axe: ~ 10,7 h
+		</p>
+		<p><span class="title">SATELLITES:</span> 146 (satellites mineurs non inclus), y compris:<br>
+			&nbsp;<span class="satname" onmouseover="show('sat1')" onmouseleave="hide('sat1')">Titan</span>, 
+			<span class="satname" onmouseover="show('sat2')" onmouseleave="hide('sat2')">Enceladus</span>, 
+			<span class="satname" onmouseover="show('sat3')" onmouseleave="hide('sat3')">Iapetus</span>, 
+			<span class="satname" onmouseover="show('sat4')" onmouseleave="hide('sat4')">Tethys</span> 
+		</p>
+		<div class="satcontainer" style="padding:0px !important;">
+			<img class="satellite" id="sat1" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Titan_in_true_color_by_Kevin_M._Gill.jpg">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/PIA17202_-_Approaching_Enceladus.jpg" class="satellite" id="sat2">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Iapetus_as_seen_by_the_Cassini_probe_-_20071008.jpg" class="satellite" id="sat3">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/PIA18317-SaturnMoon-Tethys-Cassini-20150411.jpg" class="satellite" id="sat4">
+		</div>
+	</div>
+</body>
+</html>
